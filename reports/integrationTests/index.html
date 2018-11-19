@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/font-awesome-4.5.0/css/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/init.js"></script>
+</head>
+<body>
+
+<div class="container">
+<header class="passed">
+    <time class="report-date">06, November 2018 11:23</time>
+    <h1>Test report</h1>
+    <div class="test-summary">
+        <div class="scenarios-summary">1 scenarios (1 passed)</div>
+        <div class="steps-summary">5 steps (5 passed)</div>
+        <div class="elapsed-time">
+            <i class="fa fa-clock-o"></i>
+            29.37s
+        </div>
+    </div>
+</header>
+<div class="row navigation-buttons">
+    <div class="filtering-buttons">
+        <div class="col-md-9 col-sm-8 main-btns">
+            <div class="btn-menu">
+                <button data-state="all" class="btn all-btn active" id="all-btn">All</button>
+                <button data-state="passed" class="btn passed-btn" id="passed-btn">Passed</button>
+                <button data-state="failed" class="btn error-btn" id="error-btn">Error</button>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 additional-btns">
+            <div class="btn-support">
+                <button data-state="steps" title="Display all steps within scenario" class="btn fa fa-list btn-list"
+                        id="display-btn"></button>
+                <button data-state="chart" title="Display chart" class="btn fa fa-pie-chart btn-chart"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="feature-with-scenarios">
+    <div class="row feature-container">
+    <div class="col-md-9 col-sm-8">
+        <div class="feature">
+            <h2><i class="fa fa-magic"></i> Feature:</h2>
+
+            <div class="feature-description">
+                Navigate To GETSTATS
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-4 feature-statistics">
+        <div class="scenario-label">Scenarios</div>
+        <div class="scenario-amount-passed"> 1/1 <br/><span>passed</span></div>
+        <div class="clear"></div>
+        <div class="steps-label">Steps</div>
+        <div class="steps-amount-passed"> 5/5 <br/><span>passed</span></div>
+    </div>
+</div><div class="scenario-container">
+    <div class="scenario passed">
+    <span class="fa fa-angle-down scenario-arrow"></span></h2>
+   <h2 class="status passed">Scenario: Navigate to the base url</h2>
+    <div class="step passed">
+    <span class="step-duration">4.29s</span>
+    Given I have loaded GETSTATS 6.0
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.02s</span>
+    Then the title should be "GETSTATS"
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.00s</span>
+    Then the pagination should be "true"
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">25.04s</span>
+    Then the table pages length should be 10
+    
+    
+</div><div class="step passed">
+    <span class="step-duration">0.02s</span>
+    And the table row length should be 1
+    
+    
+</div>
+</div>
+</div>
+</div>
+
+    <div class="scenario-chart">
+        <div class="close-chart fa fa-times"></div>
+        <h1 class="chart-title">Scenario statistics</h1>
+        <canvas id="chart" class="chart" width="450" height="450">Your browser doesn't support HTML5 Canvas.</canvas>
+    </div>
+</div>
+ <div class="document-container"></div>
+</body>
+</html>

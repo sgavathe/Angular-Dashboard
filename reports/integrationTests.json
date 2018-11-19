@@ -1,0 +1,114 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Navigate To GETSTATS",
+    "line": 1,
+    "id": "navigate-to-getstats",
+    "tags": [],
+    "uri": "e2e\\features\\home.feature",
+    "elements": [
+      {
+        "id": "navigate-to-getstats;navigate-to-the-base-url",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Navigate to the base url",
+        "tags": [
+          {
+            "name": "@TypeScriptScenario",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have loaded GETSTATS 6.0",
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the title should be \"GETSTATS\"",
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the pagination should be \"true\"",
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the table pages length should be 10",
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the table row length should be 1",
+            "match": {
+              "location": "e2e\\steps\\home.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
