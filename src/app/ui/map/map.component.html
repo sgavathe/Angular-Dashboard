@@ -1,0 +1,27 @@
+<a class="skiplink" href="#map">Go to map</a>
+<div id="map" tabindex="0">
+        <div class="ol-custom ol-unselectable ol-control">
+                <div class="btn-group btn-group-justified">
+                <a href="#" data-toggle="dropdown" 
+                class="btn btn-primary dropdown-toggle">Office
+                <span class="caret"></span>
+                </a>
+                <!-- <button type="button" class="btn btn-primary dropdown-toggle" 
+                        data-toggle="dropdown">
+                                Sony <span class="caret"></span></button> -->
+                        <ul class="dropdown-menu" role="menu">
+                                <li><a id="alloffices" (click)="toggleOfficeType($event)">All</a></li>
+                                <li><a id="clusteroffices" (click)="toggleOfficeType($event)">Cluster</a></li>
+                                <li><a id="allofficespoly" (click)="toggleOfficeType($event)">Boundaries</a></li>
+                        </ul>
+                </div>
+        </div> 
+</div> 
+        <div id="progress"></div>
+        <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+  
+        </div>
+<!-- <button id="zoom-out">Zoom out</button>
+<button id="zoom-in">Zoom in</button> -->

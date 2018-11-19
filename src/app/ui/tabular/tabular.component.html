@@ -1,0 +1,50 @@
+<div class="card card-cascade narrower mt-5">
+   
+    <button (click)="exportAsXLSX()" id="exportAsXLSX"><i class="fa fa-file-excel-o" style="font-size:48px;color:blue"></i></button>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fa fa-search fa-fw"></i></span>
+      </div>
+     <input id="myInput" type="search" [(ngModel)]="searchText" placeholder="Search for Offices" id="search" class="form-control">       
+  </div>
+  <div class="px-4">
+
+    <!--Table-->
+    <table class="table table-hover table-responsive-md mb-0">
+        <caption *ngIf="caption">{{ caption }}</caption>
+      <!--Table head-->
+      <thead>
+        <tr>
+            <th *ngFor="let key of columnSettings[0] ; let i = index">{{ key.header }}<i class="fa fa-fw fa-sort" (click)="sortBy(key.primaryKey)"></i></th>          
+        </tr>
+      </thead>
+      <!--Table head-->
+
+      <!--Table body      filter : 'GEOCODE_ADDRESS' : searchText-->
+      <tbody>
+        <tr (click)="zoomtomap(data.attributes.OBJECTID)"  *ngFor="let data of tableData[0] | filter : searchText : 'GEOCODE_ADDRESS' : 'OCD' | paginate: { itemsPerPage: 11, currentPage: p,totalItems: total  } ">   
+          <!-- <td *ngFor="let key of columnSettings[0] ; let i = index">{{ key.header }}</td> -->
+          <td>{{data.attributes.OBJECTID}}</td>
+          <td>{{data.attributes.OCD}}</td>
+          <td>{{data.attributes.OFC_TYP}}</td>
+          <td>{{data.attributes.GEOCODE_ADDRESS}}</td>
+        </tr>        
+      </tbody>
+      <!--Table body-->
+    </table>
+
+  </div>
+
+  <hr class="my-0">
+
+  <!--Bottom Table UI-->
+  <div class="d-flex justify-content-center">
+
+    <!--Pagination http://michaelbromley.github.io/ngx-pagination/#/ -->
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <!--/Pagination -->
+
+  </div>
+  <!--Bottom Table UI-->
+
+</div>

@@ -1,0 +1,32 @@
+  .fa-home {
+    color: lightgray;
+  }
+  .fa-cogs {
+    color: teal;
+  }
+  .fa-gavel {
+    color: orange;
+  }
+  .fa-envelope-o {
+    color: aqua;
+  }
+  .fa.fa-navicon {
+    color:aqua;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: black !important;    
+  }
+  .navbar-brand {
+    color: black  !important;
+  } 
+  .navbar-dark {
+    background-color: #111 !important;
+  }
+  .navbar-toggle .icon-bar{
+    width: 50px !important;
+    height:3px !important;
+  }
+ 
+ 
+ 
+

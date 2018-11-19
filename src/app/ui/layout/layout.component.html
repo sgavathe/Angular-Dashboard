@@ -1,0 +1,75 @@
+        <app-header ></app-header>           
+        <app-sidebar></app-sidebar>      
+        <main>
+                        <!-- <div class="breadcrumb-wrapper">
+                                        <ul class="border border-top-0 border-dark" style="background-color: rgb(255, 255, 255);">
+                                                        <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                                                        <li class="breadcrumb-item"><a href="#">Offices</a></li>
+                                                        <li class="breadcrumb-item">Congressional</li>
+                                                        <li class="breadcrumb-item">Proximity</li>
+                                        </ul>
+                        </div> -->
+               
+        <!-- <div class="container-fluid">     -->                     
+        <div class="card-body" style="background-color: #e9ecef;">     
+                <ol class="breadcrumb">
+                        <li class="breadcrumb-item"></li><!-- dummy div to show the breadcrumb div after header div -->
+                </ol>                        
+                <ol class="breadcrumb">
+                        <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Offices</a></li>
+                        <li class="breadcrumb-item">Congressional</li>
+                        <li class="breadcrumb-item">Proximity</li>
+                </ol>
+                <div class="row">
+                       <div class="card bg-light text-dark col-xs-6 col-md-6">                       
+                                <h4 class="card-title">Office Maps</h4>
+                                <app-map></app-map>                                  
+                        </div>
+                
+                        <div tabindex="3" class="card bg-light col-xs-4 col-md-6">                               
+                                <h4 class="card-title">Total Staff By Components FY 2019</h4>                                                                                                                                              
+                                        <app-chart  [chartdivID]="'chartII'"
+                                                    [chartType]="'pie'">                                                   
+                                        </app-chart>        
+                                        <div id='chartII' style="margin-left:0px;"></div>  
+                        </div>
+                       
+                </div>
+                <div class="row">
+                         <!-- <h2>All Offices</h2> -->
+                     <!-- <h2>All Offices</h2> -->
+                     <div  tabindex="-10" class="card bg-light text-dark col-xs-4 col-md-6">                               
+                        <h4 class="card-title">Staff Over Claims By FY 2019</h4>
+                        <div id='chart'></div>
+                        <app-chart  [chartdivID]="'chart'" 
+                                    [chartType]="'mixed'">
+                        </app-chart>                        
+                    </div>
+                         <!-- <h2>All Offices</h2> -->
+                   <div  tabindex="-10" class="card bg-light text-dark col-xs-4 col-md-6">                               
+                                <h4 class="card-title">OHO T28 FY 2019</h4>
+                                <div id='chart2'></div>
+                                <app-chart  [chartdivID]="'chart2'" 
+                                            [chartType]="'line'">
+                                </app-chart>                        
+                   </div>
+                </div>
+                <div class="row">
+                        <div class="card bg-light text-dark col-xs-10 col-md-12">                         
+                                <app-tabular
+                                        [tableData]="tableData"
+                                        [tableTitle]="tableTitle"
+                                        [columnSettings]="columnSettings"
+                                ></app-tabular>
+                                
+                        </div>                       
+                </div>
+        </div>    
+        <!-- </div> -->
+</main>
+
+
+
+
+

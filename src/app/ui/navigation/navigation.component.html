@@ -1,0 +1,84 @@
+<!-- <div class="btn-group">
+  <button class="btn btn-primary dropdown-toggle"
+     type="button"
+     id="dropdownMenuButton" data-toggle="dropdown">
+   Tutorials
+  </button>
+  <div class="dropdown-menu">
+     <a class="dropdown-item" href="#">Javascript</a>
+     <a class="dropdown-item" href="#">Css</a>
+     <div class="dropdown-divider"></div>
+     <a class="dropdown-item" href="#">Bootstrap</a>
+  </div>
+</div> -->
+<!-- Default dropright button -->
+ <div class="btn-group dropright">
+    <button type="button" 
+        class="btn btn-secondary dropdown-toggle" 
+        data-toggle="dropdown" 
+        aria-haspopup="true" 
+        data-disabled="true"
+        style="margin-left: 13px; margin-top: 0; margin-bottom: 0;"
+        aria-expanded="false">
+      Navigation
+    </button>
+    <div id="dropdown" class="dropdown-menu">
+      <!-- Dropdown menu links -->
+      <!-- <label>
+          Region:
+          <ng-select [items]="regionsList[0]"
+                        [ngStyle]="{'display':'block', 'width': '150px', 'text-align': 'center'}"
+                        bindLabel="NAME"
+                        bindValue="NAME"
+                        placeholder="Select Region"
+                        [(ngModel)]="selectedRegion">
+            </ng-select>
+        </label>
+      
+        <label>
+          Area:
+          <ng-select [items]="regionsList[0]"
+                        [ngStyle]="{'display':'block', 'width': '150px', 'text-align': 'center'}"
+                        bindLabel="NAME"
+                        bindValue="NAME"
+                        placeholder="Select Area"
+                        [(ngModel)]="selectedArea">
+            </ng-select>
+        </label>
+        
+        <label>
+          District:
+            <ng-select [items]="regionsList[0]"
+                    [ngStyle]="{'display':'block', 'width': '150px', 'text-align': 'center'}"
+                    bindLabel="NAME"
+                    bindValue="NAME"
+                    placeholder="Select District"
+                    [(ngModel)]="selectedDistrict">
+            </ng-select>
+        </label> -->
+    
+        <label>
+            OCD:
+            <ng-select [items]="ocdPolyList[0]"
+                        [ngStyle]="{'display':'block', 'width': '250px', 'text-align': 'left'}"
+                        bindLabel="OCDNAME"
+                        bindValue="OCD"
+                        (change)="onChange($event)"
+                        placeholder="Select OCD"
+                        [(ngModel)]="selectedOCD">
+            </ng-select>
+        </label>
+    
+        <!-- <label>
+          Zip Code:
+            <ng-select [items]="ocdPolyList"
+                    [ngStyle]="{'display':'block', 'width': '150px', 'text-align': 'left'}"
+                    bindLabel="OCDNAME"
+                    bindValue="OCD"
+                    placeholder="Select Zip"
+                    [(ngModel)]="selectedZip">
+            </ng-select>
+        </label> -->
+    </div>
+  </div>
+

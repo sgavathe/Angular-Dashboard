@@ -1,0 +1,68 @@
+/* menu specific CSS */
+main {
+    padding-left: 0px;
+    transition: all .4s ease 0s;
+    height: 100%;   
+    margin-left: -5px;   
+    overflow: hidden;
+}
+#breadcrumb-wrapper {
+    z-index: 1000;
+    top: 55px;  
+    left: 100px;
+    width: 100%;        
+}  
+
+#sidebar {
+    margin-left: -150px;
+    left: 80px;
+    width: auto;
+    background: red;
+    position: fixed;
+}
+main.active {
+    padding-left: 200px;   
+}
+main.iconactive {
+    padding-left: 50px;   
+}
+main.active #sidebar-wrapper {
+    left: 50px;
+}
+.content {
+    width: auto;
+}
+@media (max-width:767px) {
+    main {
+        padding-left: 70px;
+        transition: all .4s ease 0s;
+        position:sticky 
+    }
+    #sidebar {
+        left: 70px;
+        top:70px;            
+        position: fixed;
+    }
+    main.active {
+        padding-left: 150px;
+    }
+    main.active #sidebar {
+        left: 150px;
+        width: 150px;
+        top:70px;            
+        transition: all .4s ease 0s;
+    }
+    body>div#header{
+        position:fixed;
+    }
+    body>div#left-sidebar{
+        position:fixed;
+    }
+}
+.menus{
+    z-index: 1000;
+    position: fixed;        
+}
+
+
+
